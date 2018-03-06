@@ -1,0 +1,106 @@
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.menu {
+    text-align: center;
+    width: 900px;
+    margin: 70px auto 98px auto;
+}
+
+.menu-item {
+    display: inline-block;
+}
+
+.menu-link {
+    display: block;
+    width: 160px;
+    text-decoration: none;
+    padding: 5px 5px;
+    text-transform: uppercase;
+    color: #626262;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+}
+
+.menu-link:hover {
+    background-color: #969292;
+    color: rgb(255, 235, 205);
+}
+
+.content {
+    width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.gallery-list {
+    padding: 0px;
+    font-size: 0px;
+}
+
+.gallery-item {
+    list-style-type: none;
+    display: inline-block;
+    width: 420px;
+    margin-right: 60px;
+    margin-bottom: 125px;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    color: #626262;
+}
+
+.gallery-item:nth-of-type(2n) {
+    margin-right: 0px;
+}
+
+.definition {
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    text-align: left;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.description {
+    line-height: 24px;
+    text-align: justify;
+}
+
+.button {
+    background-color: #ffffff;
+    border: 1px solid #626262;
+    color: #626262;
+    padding: 10px 35px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 24px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.button:hover {
+    background-color: #969292;
+    color: rgb(255, 235, 205);
+    border: 1px transparent #626262;;
+}
