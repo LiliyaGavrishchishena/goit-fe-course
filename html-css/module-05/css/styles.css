@@ -31,19 +31,23 @@ img {
   font-size: 30px;
   font-weight: 300;
   line-height: 32px;
+  letter-spacing: -2px;
   text-transform: uppercase;
   text-decoration: none;
   float: left;
   padding: 33px 0;
 }
+
 .logo:first-letter {
   color: #1abc9c;
 }
 
 .menu-list {
+  margin: 0;
+  padding: 0;
   float: right;
-  padding: 7px 0;
 }
+
 .menu-item {
   display: inline-block;
 }
@@ -55,9 +59,13 @@ img {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 14px;
-  line-height: 11px;
+  line-height: 79%;
   color: #0f0101;
-  padding: 17px;
+  padding: 42px 26px;
+}
+
+.menu-link:last-child {
+  padding-right: 0;
 }
 
 .menu-link:hover,
@@ -65,34 +73,94 @@ img {
   color: #1abc9c;
 }
 
-.header {
-  margin-bottom: 70px;
-}
-
 /*SLIDER*/
 .slider {
-  position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-
+  min-height: 600px;
+  background-image: linear-gradient(to right,
+  rgba(24, 24, 25, 0.522),
+  rgba(24, 24, 25, 0.522)
+  ),
+   url('/img/slider.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
 }
 
-.first-slogan {
+.slider-inner {
+  position: relative;
+}
+
+.slides {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slider-ctrl {
+  position: absolute;
+  display: inline-block;
+  width: 104px;
+  height: 104px;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  top: 220px;
+}
+
+.slider-ctrl-back {
+  background-color: rgb(78, 198, 171);
+  opacity: 0.651;
+  left: 0;
+}
+
+.slider-ctrl-next {
+  background-color: rgba(26, 188, 156);
+  right: 0;
+}
+
+.arrow {
+  width: 22px;
+  height: 22px;
+  border-left: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.arrow-left {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.arrow-right {
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+.slides-item {
+  position: relative;
   font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+}
+
+.slides-definition {
   font-weight: 900px;
   font-size: 60px;
   line-height: 82px;
-  color: #ffffff;
+  position: absolute;
+  top: 146px;
+  left: 186px;
+  padding: 0;
 }
 
-.second-slogan {
-  font-family: 'Roboto', sans-serif;
+.slides-description {
   font-weight: 300px;
   font-size: 24px;
   line-height: 54px;
-  color: #ffffff;
-
+  position: absolute;
+  top: 252px;
+  left: 186px;
 }
 
 /*NEW COLLECTION*/
@@ -100,13 +168,22 @@ img {
   background-color: #e9f0fd;
 }
 
+.collection {
+  margin: 0;
+  padding: 0;
+}
+
 .new-collection-head {
   font-family: 'Roboto', sans-serif;
   font-weight: 900px;
   font-size: 48px;
-  line-height: 32px;
+  line-height: 67%;
   text-transform: uppercase;
   color: #515151;
+  margin: 0;
+  padding-top: 95px;
+  padding-left: 365px;
+  letter-spacing: -2px;
 }
 
 .new-collection-head::after {
@@ -115,12 +192,53 @@ img {
   height: 7px;
   content: '';
   background-color: #1abc9c;
-  margin: 30px auto  95px;
+  margin-top: 32px;
+  margin-bottom: 80px;
+  margin-left: 110px;
 }
 
 .collection-item {
   list-style-type: none;
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 100px;
+  color: #ffffff;
+  position: relative;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900px;
+  font-size: 18px;
+  line-height: 32px;
 }
+
+.collection-item:nth-child(4) {
+  margin-right: 0;
+}
+
+.collection-item-card {
+  position: relative;
+}
+
+.collection-item-description {
+  font-size: 18px;
+  line-height: 32px;
+  background-color: #323232;
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  padding-left: 15px;
+  margin: 0;
+}
+
+.collection-item-price {
+  background-color: #8c8c8c;
+  height: 40px;
+  width: 25%;
+  float: right;
+  text-align: center;
+}
+
 
 /*FOOTER*/
 .footer {
@@ -128,13 +246,14 @@ img {
 }
 
 .footer-content {
- font-family: font-family: 'Open Sans', sans-serif;
+ font-family: 'Open Sans', sans-serif;
  color: #fefefe;
  font-size: 16px;
+ font-weight: 400;
  line-height: 28px;
  margin: 0 auto;
  text-align: center;
- padding: 6px;
+ padding: 32px;
 
 }
 
