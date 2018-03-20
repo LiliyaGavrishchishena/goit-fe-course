@@ -80,7 +80,7 @@ img {
   rgba(24, 24, 25, 0.522),
   rgba(24, 24, 25, 0.522)
   ),
-   url("/img/slider.png");
+   url("../img/slider.png");
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
