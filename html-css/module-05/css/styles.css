@@ -24,6 +24,22 @@ img {
   display: table;
   clear: both;
 }
+
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /*HEADER*/
 
 .logo {
@@ -76,14 +92,15 @@ img {
 /*SLIDER*/
 .slider {
   min-height: 600px;
-  background-image: linear-gradient(to right,
-  rgba(24, 24, 25, 0.522),
-  rgba(24, 24, 25, 0.522)
-  ),
-   url("../img/slider.png");
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(24, 24, 25, 0.522),
+      rgba(24, 24, 25, 0.522)
+    ),
+    url('../img/slider.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .slider-inner {
@@ -108,19 +125,18 @@ img {
 }
 
 .slider-ctrl-back {
-  background-color: rgb(78, 198, 171);
-  opacity: 0.651;
+  background-color: rgba(78, 198, 171, 0.65);
   left: 0;
 }
 
 .slider-ctrl-next {
-  background-color: rgba(26, 188, 156);
+  background-color: rgb(26, 188, 171);
   right: 0;
 }
 
 .arrow {
-  width: 22px;
-  height: 22px;
+  width: 23px;
+  height: 23px;
   border-left: 3px solid #ffffff;
   border-bottom: 3px solid #ffffff;
   position: absolute;
@@ -203,7 +219,6 @@ img {
   margin-right: 30px;
   margin-bottom: 100px;
   color: #ffffff;
-  position: relative;
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
   font-weight: 900px;
@@ -215,30 +230,141 @@ img {
   margin-right: 0;
 }
 
+.collection-item:hover .collection-item-description,
+.collection-item:focus .collection-item-description {
+  background-color: #1abc9c;
+}
+
+.collection-item:hover .collection-item-price,
+.collection-item:focus .collection-item-price {
+  background-color: #7fd9c7;
+}
+
+.collection-item:hover .overlay,
+.collection-item:focus .overlay {
+  opacity: 1;
+}
+
 .collection-item-card {
   position: relative;
+}
+
+.collection-item-description,
+.collection-item-price {
+  display: block;
+  float: left;
+  height: 40px;
+  margin: 0;
 }
 
 .collection-item-description {
   font-size: 18px;
   line-height: 32px;
   background-color: #323232;
+  width: 200px;
   position: absolute;
   bottom: 0;
-  height: 40px;
-  width: 100%;
-  padding-left: 15px;
-  margin: 0;
+  left: 0;
+  padding: 5px 0 0 13px;
 }
 
 .collection-item-price {
   background-color: #8c8c8c;
-  height: 40px;
-  width: 25%;
-  float: right;
   text-align: center;
+  padding: 5px;
+  width: 55px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
+.overlay {
+  background-color: rgba(0, 0, 0, 0.549);
+  width: 235px;
+  height: 260px;
+  margin: 10px 10px auto 10px;
+  position: absolute;
+  opacity: 0;
+}
+
+.overlay-list {
+  list-style-type: none;
+  margin: 0;
+}
+
+.overlay-list-item {
+  margin: 0;
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+}
+
+.wish-list {
+  top: 30%;
+  left: 15%;
+  background-image: url('../img/heart.png');
+}
+
+.compare {
+  top: 30%;
+  left: 40%;
+  background-image: url('../img/arrow.png');
+}
+
+.clock {
+  top: 30%;
+  left: 65%;
+  background-image: url('../img/clock.png');
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #1abc9c;
+  border: 1px solid transparent;
+}
+
+.wish-button {
+  background-color: #323232;
+  height: 50px;
+  width: 168px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  position: absolute;
+  top: 55%;
+  left: 15%;
+}
+
+.wish-button::before {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  content: '';
+  background-image: url('../img/cart.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 15px;
+}
+.wish-button:hover,
+.wish-button:focus {
+  background-color: #1abc9c;
+  border: 1px solid transparent;
+}
+
+.add-cart {
+  float: right;
+  padding: 10px;
+}
 
 /*FOOTER*/
 .footer {
@@ -246,15 +372,14 @@ img {
 }
 
 .footer-content {
- font-family: 'Open Sans', sans-serif;
- color: #fefefe;
- font-size: 16px;
- font-weight: 400;
- line-height: 28px;
- margin: 0 auto;
- text-align: center;
- padding: 32px;
-
+  font-family: 'Open Sans', sans-serif;
+  color: #fefefe;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 32px;
 }
 
 .designed {
