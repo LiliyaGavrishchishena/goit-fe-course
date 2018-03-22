@@ -37,3 +37,123 @@ input[type='radio'].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/* HEADER */
+.logo {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #95e1d3;
+}
+
+.menu-item {
+ list-style-type: none;
+}
+
+.menu-link {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #95e1d3;
+  font-size: 14px;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: #f38181;
+}
+
+/* SECTION SERVICE */
+
+.presentation {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 24px;
+  color: #333333;
+}
+
+.exhibition {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #333333;
+}
+
+.service-list {
+  list-style-type: none;
+}
+
+.service-item-head {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #333333;
+}
+
+.service-item-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+}
+
+
+/* SECTION TEAM */
+.description{
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+}
+
+.team-list {
+  list-style-type: none;
+}
+
+.name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #333333;
+}
+
+.team-position {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300i;
+  color: #999999;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+/* FOOTER */
+.footer-content {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #333333;
+}
+
+.footer-text {
+  color: #f38181;
+}
+
+.email {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300i;
+  color: #999999;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.subscribe {
+  border: 1px solid transparent;
+  background-color: #95e1d3;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 7px 43px;
+}
