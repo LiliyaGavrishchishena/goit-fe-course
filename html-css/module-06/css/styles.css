@@ -93,6 +93,72 @@ input[type='radio'].visually-hidden {
   list-style-type: none;
 }
 
+.service-item-clock::before {
+  content: "";
+  background-image: url('../img/icon1.png');
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.service-item-line::before {
+  content: "";
+  background-image: url('../img/icon2.png');
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.service-item-computer::before {
+  content: "";
+  background-image: url('../img/icon3.png');
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.service-item-book::before {
+  content: "";
+  background-image: url('../img/icon4.png');
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.service-item-home::before {
+  content: "";
+  background-image: url('../img/icon5.png');
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.service-item-digital::before {
+  content: "";
+  background-image: url('../img/icon6.png');
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .service-item-head {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
