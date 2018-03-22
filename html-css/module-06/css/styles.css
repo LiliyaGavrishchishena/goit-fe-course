@@ -64,12 +64,21 @@ input[type='radio'].visually-hidden {
   color: #f38181;
 }
 
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  margin: 0 auto;
+}
 /* SECTION SERVICE */
 
 .presentation {
   font-family: 'Kaushan Script', cursive;
   font-size: 24px;
   color: #333333;
+  text-align: center;
 }
 
 .exhibition {
@@ -77,6 +86,7 @@ input[type='radio'].visually-hidden {
   font-weight: 700;
   font-size: 30px;
   color: #333333;
+  text-align: center;
 }
 
 .service-list {
@@ -106,6 +116,7 @@ input[type='radio'].visually-hidden {
   line-height: 24px;
   font-weight: 400;
   color: #999999;
+  text-align: center;
 }
 
 .team-list {
@@ -117,6 +128,7 @@ input[type='radio'].visually-hidden {
   font-weight: 400;
   font-size: 14px;
   color: #333333;
+  text-align: center;
 }
 
 .team-position {
@@ -125,6 +137,7 @@ input[type='radio'].visually-hidden {
   color: #999999;
   font-size: 15px;
   line-height: 24px;
+  text-align: center;
 }
 
 /* FOOTER */
