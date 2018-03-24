@@ -249,7 +249,7 @@ input[type='radio'].visually-hidden {
   position: absolute;
   top: -10px;
   left: -10px;
-  opacity: 0;
+  opacity: 1;
   box-shadow: 10px 10px 0 rgb(149, 225, 211);
 }
 
@@ -265,6 +265,10 @@ input[type='radio'].visually-hidden {
   list-style: none;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .overlay-item {
