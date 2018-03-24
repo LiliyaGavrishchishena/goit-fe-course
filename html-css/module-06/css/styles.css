@@ -221,12 +221,6 @@ input[type='radio'].visually-hidden {
   position: relative;
 }
 
-.team-item:hover,
-.team-item:focus {
-  transform: translate(-10px,-10px);
-  transition-duration: 0.2s;
-}
-
 .name {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -253,7 +247,8 @@ input[type='radio'].visually-hidden {
     rgba(243, 129, 129, 0.9) 100%
   );
   position: absolute;
-  top: 0;
+  top: -10px;
+  left: -10px;
   opacity: 0;
   box-shadow: 10px 10px 0 rgb(149, 225, 211);
 }
@@ -338,7 +333,8 @@ input[type='radio'].visually-hidden {
   font-weight: 300i;
   color: #999999;
   font-size: 15px;
-  line-height: 24px;
+  line-height: 32px;
+  width: 230px;
 }
 
 .subscribe {
@@ -350,4 +346,5 @@ input[type='radio'].visually-hidden {
   color: #ffffff;
   font-size: 14px;
   padding: 12px 32px;
+
 }
