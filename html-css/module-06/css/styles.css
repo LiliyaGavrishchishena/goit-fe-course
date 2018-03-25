@@ -227,6 +227,7 @@ input[type='radio'].visually-hidden {
   font-size: 14px;
   color: #333333;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .team-position {
@@ -249,8 +250,9 @@ input[type='radio'].visually-hidden {
   position: absolute;
   top: -10px;
   left: -10px;
-  opacity: 1;
+  opacity: 0;
   box-shadow: 10px 10px 0 rgb(149, 225, 211);
+  transition: opacity .2s linear;
 }
 
 .team-item:hover .overlay,
@@ -287,6 +289,7 @@ input[type='radio'].visually-hidden {
   background-repeat: no-repeat;
   background-position: center;
   background-color: #fce38a;
+  transition: background-color .2s linear;
 }
 
 .overlay-item a:hover,
@@ -337,8 +340,9 @@ input[type='radio'].visually-hidden {
   font-weight: 300i;
   color: #999999;
   font-size: 15px;
-  line-height: 32px;
+  line-height: 38px;
   width: 230px;
+  border: 1px solid #e5e5e5;
 }
 
 .subscribe {
