@@ -106,6 +106,7 @@ input[type='radio'].visually-hidden {
   font-size: 24px;
   color: #333333;
   text-align: center;
+  margin-bottom: 12px;
 }
 
 .exhibition {
@@ -115,6 +116,8 @@ input[type='radio'].visually-hidden {
   color: #333333;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+
 }
 
 .exhibition::after {
@@ -123,8 +126,8 @@ input[type='radio'].visually-hidden {
   height: 2px;
   content: '';
   background-color: #f38181;
-  margin-top: 20px;
-  margin-bottom: 30px; /* выравнивать */
+  margin-top: 38px;
+  margin-bottom: 50px;
   margin-left: 570px;
 }
 .service-list {
@@ -138,12 +141,12 @@ input[type='radio'].visually-hidden {
 }
 
 .service-item {
-  margin-bottom: 35px; /* выравнивать */
   width: 380px;
   margin: 0;
   padding: 0;
-  padding-left: 60px;
+  padding-left: 86px;
   position: relative;
+  margin-bottom: 62px;
 }
 
 .service-item::before {
@@ -154,7 +157,7 @@ input[type='radio'].visually-hidden {
   background-size: cover;
   background-position: center;
   position: absolute;
-  left: 0;
+  left: 30px;
   top: 15px;
   content: '';
 }
