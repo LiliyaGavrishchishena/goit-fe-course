@@ -106,7 +106,7 @@ img {
   height: 7px;
   content: '';
   background-color: #1abc9c;
-  margin: 30px auto  95px;
+  margin: 30px auto 95px;
 }
 
 .products {
@@ -123,21 +123,39 @@ img {
   float: left;
   margin-right: 30px;
   margin-bottom: 30px;
-  width: 22.97%
+  width: 22.97%;
 }
 
 .products-item:nth-child(4n) {
   margin-right: 0px;
 }
 
-.product-name {
-  width: 255px;
+.products-item:hover .product-name {
+  background-color: #1abc9c;
+}
+
+.products-item:hover .product-price {
+  background-color: #7fd9c7;
+}
+
+.product-name,
+.product-price {
+  display: block;
   height: 40px;
-  background-color: #323232;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 900;
+  float: left;
+  margin: 0;
   color: #ffffff;
   font-size: 18px;
+  font-weight: 900;
+  line-height: 40px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 32px;
+  text-align: center;
+}
+
+.product-name {
+  width: 200px;
+  background-color: #323232;
   line-height: 32px;
   text-align: center;
   text-transform: uppercase;
@@ -145,30 +163,11 @@ img {
   padding: 0;
 }
 
-.product-name:hover,
-.product-name:focus {
-  background-color: #1abc9c;
-  cursor: pointer;
-}
-
 .product-price {
-  display: inline-block;
-  width: 55px;
-  height: 40px;
+  width: 54.96px;
   background-color: #8c8c8c;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 900;
-  color: #ffffff;
-  font-size: 18px;
-  line-height: 32px;
-  text-align: center;
-  float: right;
-}
-
-.product-price:hover,
-.product-price:focus {
-  background-color: #7fd9c7;
-  cursor: pointer;
+  margin: 0;
+  padding: 0;
 }
 
 /*NEWS*/
@@ -189,7 +188,7 @@ img {
   height: 7px;
   content: '';
   background-color: #1abc9c;
-  margin: 30px auto  80px;
+  margin: 30px auto 80px;
 }
 
 .news-list {
@@ -241,10 +240,6 @@ img {
   display: inline-block;
   font-size: 16px;
   line-height: 26px;
-  margin: 0 auto;
+  margin: 0 30px 80px 0;
   border: none;
 }
-
-
-
-
