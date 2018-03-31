@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="./css/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -40,21 +42,21 @@
   <main>
     <h1 class="visually-hidden">Services of Golden</h1>
     <!-- SECTION SERVICES -->
-    <section class="services">
+    <section class="services container">
       <h2 class="services-head">Services</h2>
       <p class="services-description">Proin iaculis purus consequat sem cure. </p>
       <ul class="service-list">
-        <li class="service-item">
+        <li class="service-item item-basket">
           <h3 class="service-item-head">E-Commerce</h3>
           <p class="service-item-text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum
             suscipit aenean rhoncus posuere odio in tincidunt.</p>
         </li>
-        <li class="service-item">
+        <li class="service-item item-laptop">
           <h3 class="service-item-head">Responsive Web</h3>
           <p class="service-item-text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum
             suscipit aenean rhoncus posuere odio in tincidunt.</p>
         </li>
-        <li class="service-item">
+        <li class="service-item item-locked">
           <h3 class="service-item-head">Web Security</h3>
           <p class="service-item-text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum
             suscipit aenean rhoncus posuere odio in tincidunt.</p>
@@ -67,11 +69,11 @@
       <h2 class="contact-form-head">Contact us</h2>
       <p class="contact-form-description">Proin iaculis purus consequat sem cure. </p>
       <form class="contact-form" action="#" method="get">
-        <input class="name" type="text" name="a" id="id_input" placeholder="Your Name*">
-        <input class="email" name="email" type="email" id="id_email" placeholder="Your E-Mail*" size="15">
-        <input class="subject" type="text" name="subject" id="id_subject" placeholder="Subject">
-        <textarea class="comments" name="comments" rows="" cols="" placeholder="Your message"></textarea>
-        <input class="button" type="submit" value="send message">
+        <input class="name" type="text" name="name" id="name" placeholder="Your Name*" required>
+        <input class="email" type="email" name="email"  id="email" placeholder="Your E-Mail*" required>
+        <input class="subject" type="text" name="subject" id="subject" placeholder="Subject">
+        <textarea class="comments" name="message" rows="3" cols="1" placeholder="Your message" required></textarea>
+        <input class="button" type="submit" id="submit message" value="send message">
       </form>
     </section>
   </main>

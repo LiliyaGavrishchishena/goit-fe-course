@@ -38,4 +38,137 @@ input[type='radio'].visually-hidden {
 
 /* font-family: 'Montserrat', sans-serif;
    font-family: 'Roboto Slab', serif;
+
+  font-family: 'Droid Serif Italic', arial;
+  @import url(http://allfont.ru/allfont.css?fonts=droid-serif-italic);
+
+  color: #fed136;
 */
+.logo {
+  text-decoration: none;
+  color: #fed136;
+  font-size: 26px;
+  line-height: 50px;
+  font-family: 'Marck Script', cursive;
+}
+
+.menu {
+  display: flex;
+  /* min-height: 100px; */
+  align-items: center;
+  justify-content: space-between;
+  /* margin-bottom: 10px; */
+}
+
+.menu-list {
+  width: 485px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.menu-item {
+  list-style-type: none;
+  margin: 0;
+}
+
+.menu-link {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #222222;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.menu-link:hover {
+  color: #fed136;
+}
+
+/* SECTION SERVICES */
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.services-head {
+  color: #222222;
+  text-align: center;
+}
+
+p[class*="description"] {
+  color: #777777;
+  font-family: 'PT Mono', monospace;
+  font-style: italic;
+  font-size: 16px;
+  text-align: center;
+}
+
+.service-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.service-item {
+  width: 290px;
+}
+.service-item-head {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.service-item-text {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #777777;
+}
+
+.service-item::before {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  content: '';
+  border: 2px solid #fed136;
+  border-radius: 50px;
+}
+
+.item-basket::before {
+  background-image: url('../img/Icon-Basket.png');
+}
+
+.item-laptop::before {
+  background-image: url('../img/Icon-Laptop.png');
+}
+
+.item-locked::before {
+  background-image: url('../img/Icon-Locked.png');
+}
+
+/* SECTION FORM */
+
+.contact {
+  background-color: #222222;
+}
+
+.contact-form-head {
+  color: #ffffff;
+}
+
+* {
+  outline: 1px solid green;
+}
