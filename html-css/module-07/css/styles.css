@@ -103,7 +103,7 @@ h2 {
   text-align: center;
 }
 
-p[class*="description"] {
+p[class*='description'] {
   color: #777777;
   font-family: 'PT Mono', monospace;
   font-style: italic;
@@ -123,6 +123,7 @@ p[class*="description"] {
 .service-item {
   width: 290px;
 }
+
 .service-item-head {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -170,6 +171,46 @@ p[class*="description"] {
 
 .contact-form-head {
   color: #ffffff;
+}
+
+.contact-form {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+
+}
+
+.name,
+.email,
+.subject,
+.comments {
+  width: 455px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #bbbbbb;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.comments {
+  resize: none;
+}
+.button {
+  border: none;
+  background-color: #fed136;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  color: #ffffff;
+  margin-bottom: 115px;
+  padding: 25px 45px;
+  width: 240px;
 }
 
 * {
