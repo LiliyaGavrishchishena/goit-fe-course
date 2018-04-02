@@ -255,3 +255,7 @@ p[class*='description'] {
   width: 240px;
   margin: 28px auto 115px;
 }
+
+.button:hover {
+  cursor: pointer;
+}
