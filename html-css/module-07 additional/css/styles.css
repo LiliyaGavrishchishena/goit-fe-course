@@ -1,0 +1,117 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Raleway', 'Arial', sans-serif;
+  color: #6c7279;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* visually-hidden helper */
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* FILTER BY CATEGORIES*/
+.categories-form {
+  width: 262px;
+  padding: 0 16px;
+}
+
+.categories-filter-title {
+  color: #2a2a2a;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 38px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.categories-filter-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.categories-filter-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.categories-filter-label::before {
+  display: inline-block;
+  content: '';
+  width: 14px;
+  height: 14px;
+  margin-right: 12px;
+  background-image: url('../img/icon-square.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.categories-filter-item-categories {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 34px;
+  color: #2a2a2a;
+  text-transform: uppercase;
+}
+
+.categories-filter-item-count {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  margin-left: auto;
+  background-color: #2a2a2a;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 23px;
+}
+
+.categories-filter-check:checked + .categories-filter-label {
+  padding-left: 12px;
+}
+
+.categories-filter-check:checked + .categories-filter-label::before {
+  background-image: url('../img/icon-check.svg');
+}
+
+.categories-filter-check:checked + .categories-filter-label .categories-filter-item-categories {
+  color: #d58e32;
+}
+
+.categories-filter-check:checked + .size-filter-label .categories-filter-item-count {
+  background-color: #d58e32;
+}
+
+
