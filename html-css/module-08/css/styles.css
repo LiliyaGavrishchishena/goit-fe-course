@@ -1,4 +1,6 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
@@ -10,9 +12,10 @@ img {
 
 .container {
   margin: 0 auto;
- }
+  text-align: center;
+}
 
- .visually-hidden:not(:focus):not(:active),
+.visually-hidden:not(:focus):not(:active),
 input[type='checkbox'].visually-hidden,
 input[type='radio'].visually-hidden {
   position: absolute;
@@ -25,4 +28,112 @@ input[type='radio'].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+/* BANNER-HEADER */
+
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Montserrat', sans-serif; */
+
+.banner {
+  background: url('../img/banners.png') no-repeat center center;
+}
+
+.header {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.form-list {
+  list-style-type: none;
+}
+
+.form-item a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.header-section {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+}
+
+.header-slogan {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.slogan {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.banner-button {
+  background-color: #ff4e50;
+  border: none;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  border-radius: 20px;
+  padding: 15px 45px;
+  cursor: pointer;
+}
+
+/* MAIN */
+
+.cards-header {
+  color: #333333;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.cards-list {
+  list-style-type: none;
+}
+
+.card-name {
+  color: #333333;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.card-description {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #666666;
+}
+
+.cards-button {
+  background-color: #fff;
+  border: 2px solid #ff4e50;
+  color: #ff4e50;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  border-radius: 18px;
+  padding: 15px 69px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .banner {
+    background: url('../img/bannerm.png') no-repeat center center;
+  }
+}
+
+@media (min-width: 1440px) {
+  .banner {
+    background: url('../img/bannerl.png') no-repeat center center;
+  }
 }
