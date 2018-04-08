@@ -1,7 +1,11 @@
-*,
-*:before,
-*:after {
+html {
   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 img {
@@ -27,26 +31,29 @@ input[type='radio'].visually-hidden {
 
 /* BANNER-HEADER */
 
-/* font-family: 'Roboto', sans-serif;
-font-family: 'Montserrat', sans-serif; */
-
 .banner {
   background: url('../img/banners.png') no-repeat center center;
   min-height: 540px;
   background-color: #1a1915;
+  margin-bottom: 66px;
 }
 
 .container {
   margin: 0 auto;
   text-align: center;
   width: 320px;
-  padding: 0 15px;
+  padding: 0;
 }
 
 .header {
   font-family: 'Montserrat', sans-serif;
   display: flex;
   flex-direction: column;
+}
+
+.form {
+  padding-top: 20px;
+  margin-bottom: 28px;
 }
 
 .logo {
@@ -61,20 +68,29 @@ font-family: 'Montserrat', sans-serif; */
   list-style-type: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 115px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+.form-item {
+  padding: 0;
 }
 
 .form-item a {
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   text-decoration: none;
   color: #ffffff;
   font-weight: 700;
-  padding: 12px;
+  display: block;
+  padding: 9px 15px;
+  margin: 0;
+  height: 100%;
 }
 
-.active a {
-  border: 1px solid #ffffff;
+.form-item-active {
+  border: 2px solid #ffffff;
   border-radius: 20px;
 }
 
@@ -87,11 +103,17 @@ font-family: 'Montserrat', sans-serif; */
   text-transform: uppercase;
   font-size: 30px;
   font-weight: 700;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 14px;
 }
 
 .slogan {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  margin: 0;
+  padding: 0 60px;
+  margin-bottom: 20px;
 }
 
 .banner-button {
@@ -101,17 +123,23 @@ font-family: 'Montserrat', sans-serif; */
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   border-radius: 20px;
-  padding: 15px 45px;
+  padding: 12px 45px;
   cursor: pointer;
 }
 
 /* MAIN */
+.cards {
+  margin-bottom: 60px;
+}
 
 .cards-header {
+  margin: 0;
+  padding: 0;
   color: #333333;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 22px;
+  margin-bottom: 14px;
 }
 
 .cards-list {
@@ -121,8 +149,52 @@ font-family: 'Montserrat', sans-serif; */
 }
 
 .cards-item {
+  padding: 0;
   width: 266px;
   margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.cards-item-hunter::after,
+.cards-item-walker::after,
+.cards-item-lucas::after,
+.cards-item-bradly::after {
+  display: block;
+  content: '';
+  width: 34px;
+  height: 34px;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  right: 72px;
+  top: 90px;
+}
+
+.cards-item-hunter::after {
+  background: url('../img/icon1.png') no-repeat 45% 35%;
+  background-color: #ff4e50;
+}
+
+.cards-item-walker::after {
+  background: url('../img/icon2.png') no-repeat 45% 40%;
+  background-color: #ffa507;
+}
+
+.cards-item-lucas::after {
+  background: url('../img/icon3.png') no-repeat 40% 35%;
+  background-color: #1cd7ad;
+}
+
+.cards-item-bradly::after {
+  background: url('../img/icon4.png') no-repeat 40% 50%;
+  background-color: #4e73db;
+}
+
+.cards-list img {
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 20px;
 }
 
 .card-name {
@@ -130,6 +202,8 @@ font-family: 'Montserrat', sans-serif; */
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 14px;
+  margin: 0;
+  padding: 0;
 }
 
 .card-description {
@@ -137,6 +211,9 @@ font-family: 'Montserrat', sans-serif; */
   font-weight: 300;
   font-size: 14px;
   color: #666666;
+  padding: 0 20px;
+  text-align: center;
+  margin-bottom: 28px;
 }
 
 .cards-button {
@@ -146,7 +223,7 @@ font-family: 'Montserrat', sans-serif; */
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   border-radius: 20px;
-  padding: 15px 69px;
+  padding: 12px 69px;
   cursor: pointer;
 }
 
