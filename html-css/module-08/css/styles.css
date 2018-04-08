@@ -10,11 +10,6 @@ img {
   height: auto;
 }
 
-.container {
-  margin: 0 auto;
-  text-align: center;
-}
-
 .visually-hidden:not(:focus):not(:active),
 input[type='checkbox'].visually-hidden,
 input[type='radio'].visually-hidden {
@@ -37,10 +32,21 @@ font-family: 'Montserrat', sans-serif; */
 
 .banner {
   background: url('../img/banners.png') no-repeat center center;
+  min-height: 540px;
+  background-color: #1a1915;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+  width: 320px;
+  padding: 0 15px;
 }
 
 .header {
   font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo {
@@ -48,22 +54,33 @@ font-family: 'Montserrat', sans-serif; */
   text-decoration: none;
   color: #ffffff;
   font-weight: 700;
+  display: block;
 }
 
 .form-list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
 }
 
 .form-item a {
   font-size: 14px;
   text-decoration: none;
-  color: #ffffff;
+  /* color: #ffffff; */
   font-weight: 700;
+  padding: 12px;
+}
+
+.active a {
+  border: 1px solid #ffffff;
+  border-radius: 20px;
 }
 
 .header-section {
   font-family: 'Montserrat', sans-serif;
-  color: #ffffff;
+  /* color: #ffffff; */
 }
 
 .header-slogan {
@@ -99,6 +116,13 @@ font-family: 'Montserrat', sans-serif; */
 
 .cards-list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards-item {
+  width: 266px;
+  margin: 0 auto;
 }
 
 .card-name {
@@ -121,7 +145,7 @@ font-family: 'Montserrat', sans-serif; */
   color: #ff4e50;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
-  border-radius: 18px;
+  border-radius: 20px;
   padding: 15px 69px;
   cursor: pointer;
 }
@@ -130,10 +154,23 @@ font-family: 'Montserrat', sans-serif; */
   .banner {
     background: url('../img/bannerm.png') no-repeat center center;
   }
+
+  .container {
+    width: 670px;
+  }
 }
 
 @media (min-width: 1440px) {
   .banner {
     background: url('../img/bannerl.png') no-repeat center center;
+    background-size: cover;
   }
+
+  .container {
+    width: 940px;
+  }
+}
+
+* {
+  outline: 1px solid green;
 }
