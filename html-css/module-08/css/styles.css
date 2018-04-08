@@ -68,7 +68,7 @@ font-family: 'Montserrat', sans-serif; */
 .form-item a {
   font-size: 14px;
   text-decoration: none;
-  /* color: #ffffff; */
+  color: #ffffff;
   font-weight: 700;
   padding: 12px;
 }
@@ -80,7 +80,7 @@ font-family: 'Montserrat', sans-serif; */
 
 .header-section {
   font-family: 'Montserrat', sans-serif;
-  /* color: #ffffff; */
+  color: #ffffff;
 }
 
 .header-slogan {
@@ -153,6 +153,7 @@ font-family: 'Montserrat', sans-serif; */
 @media (min-width: 768px) {
   .banner {
     background: url('../img/bannerm.png') no-repeat center center;
+    background-color: #1a1915;
   }
 
   .container {
@@ -164,6 +165,7 @@ font-family: 'Montserrat', sans-serif; */
   .banner {
     background: url('../img/bannerl.png') no-repeat center center;
     background-size: cover;
+    background-color: #1a1915;
   }
 
   .container {
