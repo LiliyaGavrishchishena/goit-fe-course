@@ -331,6 +331,10 @@ input[type='radio'].visually-hidden {
     width: 940px;
   }
 
+  .form {
+    margin-bottom: 142px;
+  }
+
   .header-slogan {
     padding: 0 160px;
   }
@@ -357,3 +361,4 @@ input[type='radio'].visually-hidden {
     right: 50px;
   }
 }
+
