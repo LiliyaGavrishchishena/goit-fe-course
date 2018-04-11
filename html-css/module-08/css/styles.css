@@ -62,6 +62,7 @@ input[type='radio'].visually-hidden {
   color: #ffffff;
   font-weight: 700;
   display: block;
+  text-transform: uppercase;
 }
 
 .form-list {
@@ -223,7 +224,7 @@ input[type='radio'].visually-hidden {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   border-radius: 20px;
-  padding: 12px 69px;
+  padding: 10px 69px;
   cursor: pointer;
 }
 
@@ -231,10 +232,91 @@ input[type='radio'].visually-hidden {
   .banner {
     background: url('../img/bannerm.png') no-repeat center center;
     background-color: #1a1915;
+    min-height: 700px;
   }
 
   .container {
-    width: 670px;
+    width: 680px;
+  }
+
+  .logo {
+    padding-top: 10px;
+  }
+
+  .form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding-top: 38px;
+  }
+
+  .header-slogan {
+    font-size: 52px;
+    padding: 0 40px;
+    margin-bottom: 28px;
+  }
+
+  .slogan {
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin-bottom: 34px;
+  }
+
+  .banner-button {
+    padding: 12px 20px;
+  }
+
+  .cards-header {
+    margin-bottom: 35px;
+  }
+
+  .cards-list {
+    width: 492px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto 8px;
+  }
+
+  .cards-item {
+    width: 236px;
+    margin-bottom: 13px;
+  }
+
+  .cards-item:nth-child(even) {
+    margin-bottom: 3px;
+  } /* Использовала такой селектор вместо этого " .cards-item:not(:nth-last-child(-n+2)) {
+    margin-bottom: 13px;", т.к.из-за смены порядка он работает не корректно0
+  } */
+
+  .cards-item:first-child {
+    order: 1;
+  }
+
+  .cards-item:nth-child(2) {
+    order: 3;
+  }
+
+  .cards-item:nth-child(3) {
+    order: 2;
+  }
+
+  .cards-item:nth-child(4) {
+    order: 4;
+  }
+
+  .cards-button {
+    padding: 9px 24px;
+  }
+
+  .cards-item-hunter::after,
+  .cards-item-walker::after {
+    right: 62px;
+  }
+
+  .cards-item-lucas::after,
+  .cards-item-bradly::after {
+    right: 52px;
   }
 }
 
@@ -248,8 +330,30 @@ input[type='radio'].visually-hidden {
   .container {
     width: 940px;
   }
-}
 
-* {
-  outline: 1px solid green;
+  .header-slogan {
+    padding: 0 160px;
+  }
+
+  .cards-item {
+    width: 220px;
+    margin: 0;
+  }
+
+  .cards-item:nth-child(even) {
+    margin-bottom: 0;
+  }
+
+  .card-description {
+    padding: 0;
+  }
+
+  .cards-list {
+    width: 940px;
+    margin-bottom: 10px;
+  }
+  .cards-item-hunter::after,
+  .cards-item-walker::after {
+    right: 50px;
+  }
 }
