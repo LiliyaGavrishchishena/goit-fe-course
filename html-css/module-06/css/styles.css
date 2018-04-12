@@ -62,11 +62,12 @@ input[type='radio'].visually-hidden {
   margin: 0;
   padding: 0;
   justify-content: space-between;
+  padding-top: 34px;
 }
 
 .menu-item {
   list-style-type: none;
-  padding-top: 34px;
+
   margin: 0;
 }
 
