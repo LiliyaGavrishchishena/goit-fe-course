@@ -193,7 +193,7 @@ input[type='radio'].visually-hidden {
   font-weight: 300;
   font-size: 14px;
   color: #666;
-  padding: 0 110px;
+  padding: 0 60px;
   line-height: 19px;
   margin-bottom: 25px;
 }
@@ -252,7 +252,7 @@ input[type='radio'].visually-hidden {
   }
 
   .card-description {
-    padding: 0 55px;
+    padding: 0 10px;
   }
 
   .cards-list .row > [class*='col-'] {
@@ -265,7 +265,7 @@ input[type='radio'].visually-hidden {
   }
 
   .cards-list {
-    margin-bottom: 6px;
+    margin-bottom: 25px;
   }
 
   .cards-item-hunter::after,
