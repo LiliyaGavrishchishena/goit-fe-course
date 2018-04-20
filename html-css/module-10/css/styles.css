@@ -1,0 +1,21 @@
+img {
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+
+.box {
+  width: 400px;
+  height: 200px;
+  background-image: url("../img/400_200.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .box {
+    background-image: url("../img/800_400@2x.png");
+  }
+}
