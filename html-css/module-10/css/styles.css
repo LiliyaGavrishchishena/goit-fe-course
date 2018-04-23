@@ -559,6 +559,4 @@ input [type='email'] {
   color: #999999;
   font-size: 15px;
 }
-* {
-  outline: 1px solid blue;
-}
+
