@@ -6,25 +6,25 @@
       from(rgba(252, 227, 138, 0.9)),
       to(rgba(243, 129, 129, 0.9))
     ),
-    url('./img/banner.png');
+    url('../img/banner.png');
   background-image: -webkit-linear-gradient(
       bottom,
       rgba(252, 227, 138, 0.9),
       rgba(243, 129, 129, 0.9)
     ),
-    url('./img/banner.png');
+    url('../img/banner.png');
   background-image: -o-linear-gradient(
       bottom,
       rgba(252, 227, 138, 0.9),
       rgba(243, 129, 129, 0.9)
     ),
-    url('./img/banner.png');
+    url('../img/banner.png');
   background-image: linear-gradient(
       to top,
       rgba(252, 227, 138, 0.9),
       rgba(243, 129, 129, 0.9)
     ),
-    url('./img/banner.png');
+    url('../img/banner.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
