@@ -79,27 +79,27 @@
 }
 
 .service-list__item--clock::before {
-  background-image: url('/img/alarm.svg');
+  background-image: url('../../img/alarm.svg');
 }
 
 .service-list__item--line::before {
-  background-image: url('/img/line.svg');
+  background-image: url('../../img/line.svg');
 }
 
 .service-list__item--computer::before {
-  background-image: url('/img/computer.svg');
+  background-image: url('../../img/computer.svg');
 }
 
 .service-list__item--book::before {
-  background-image: url('/img/book.svg');
+  background-image: url('../../img/book.svg');
 }
 
 .service-list__item--home::before {
-  background-image: url('/img/home.svg');
+  background-image: url('../../img/home.svg');
 }
 
 .service-list__item--digital::before {
-  background-image: url('/img/box.svg');
+  background-image: url('../../img/box.svg');
 }
 
 .service-list__direction {
