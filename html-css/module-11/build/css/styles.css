@@ -430,7 +430,7 @@ img {
 }
 
 .header {
-  background-image: linear-gradient(to top, rgba(244, 189, 97, 0.9), rgba(243, 129, 129, 0.9)), url("../../img/banner.png");
+  background: linear-gradient(to top, rgba(244, 189, 97, 0.9), rgba(243, 129, 129, 0.9)), url("../../img/banner.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -648,27 +648,27 @@ img {
 }
 
 .service-list__item--clock::before {
-  background-image: url("../../img/icons/alarm.svg");
+  background: url("../../img/icons/alarm.svg");
 }
 
 .service-list__item--line::before {
-  background-image: url("../../img/icons/line.svg");
+  background: url("../../img/icons/line.svg");
 }
 
 .service-list__item--computer::before {
-  background-image: url("../../img/icons/computer.svg");
+  background: url("../../img/icons/computer.svg");
 }
 
 .service-list__item--book::before {
-  background-image: url("../../img/icons/book.svg");
+  background: url("../../img/icons/book.svg");
 }
 
 .service-list__item--home::before {
-  background-image: url("../../img/icons/home.svg");
+  background: url("../../img/icons/home.svg");
 }
 
 .service-list__item--digital::before {
-  background-image: url("../../img/icons/box.svg");
+  background: url("../../img/icons/box.svg");
 }
 
 .service-list__direction {
