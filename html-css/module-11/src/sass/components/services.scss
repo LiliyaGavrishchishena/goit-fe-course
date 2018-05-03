@@ -73,27 +73,27 @@
   }
 
   &--clock::before {
-    background-image: url('../../img/icons/alarm.svg');
+    background-image: url('../img/icons/alarm.svg');
   }
 
   &--line::before {
-    background-image: url('../../img/icons/line.svg');
+    background-image: url('../img/icons/line.svg');
   }
 
   &--computer::before {
-    background-image: url('../../img/icons/computer.svg');
+    background-image: url('../img/icons/computer.svg');
   }
 
   &--book::before {
-    background-image: url('../../img/icons/book.svg');
+    background-image: url('../img/icons/book.svg');
   }
 
   &--home::before {
-    background-image: url('../../img/icons/home.svg');
+    background-image: url('../img/icons/home.svg');
   }
 
   &--digital::before {
-    background-image: url('../../img/icons/box.svg');
+    background-image: url('../img/icons/box.svg');
   }
 
 }
