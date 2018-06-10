@@ -356,6 +356,7 @@ input[type='radio'].visually-hidden {
     width: 940px;
     margin-bottom: 10px;
   }
+
   .cards-item-hunter::after,
   .cards-item-walker::after {
     right: 50px;
