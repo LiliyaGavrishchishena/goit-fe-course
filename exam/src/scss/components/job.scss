@@ -1,0 +1,449 @@
+.job {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAxCAMAAABEQrEuAAAAIVBMVEX19fX39/f9/f35+fn7+/v////x8fHz8/Pw8PDu7u7r6+v97b0BAAADxklEQVRIx5WV3ZYYNwiDxZ8wvP8DV0x7kYumzW5yzs54MBKfMYsJemVwiq0neFnBqtqmmaiscK+XPRbT+oD2ZQfDDBVh1bSGMdYarzkwm2mEYnKsexDmbQ5lADpjmArFg6X3tF9q7QmLJvQekq2mdDm2QBcTzmzjRGBY7TQWYKWAlwbJVUjYwWi4JEtm+83yM+23DK8TDhrtlOq9yMxnBKds2gDA57yMQgMr6XrS7B4aoudphfvqcoDFLod193pYBnzqgbZuFxFgXykZ+urfi6LjeYYZK4agQ1hDinnoBvO8JVhD5+RumrBgQB/MuL0V8yStrg5socF37ntqgNZzVwN8rC5ZM3LYGBfANgTx7zwK3SeXcd/SdgijbRQAm7Sx9taOuQ8YWMAU69J2u+Ofcq23dAPRxuwXjXuoGWaTpqcs2mMQ8zZb72kODBAZU94EH+0P+hI1NrX2ehCDkb60di2GRCDI6mS4XWYYGj+nWzQFGawDuUEPSva4XsJJDF4wvhaBwxqRE5glkZygxAecZJtxyLcMGlpRMoa2QupFK1IJ632+u18zbmKzMdMZMGAsiQk4QP7sUkGUh0G3nOakgUYz+LOr9LpnhCa72W14SHAHNS4gsO4wJjMvDuXDV7CNruAMtbPn4XcQOQy3fKOArLuXyW5/Ax97+ySauYBkGZgeyTx8nVMWIcF6Bx4E2reOpPfB77EM0kYEpcosDtg+jSlDA4Vfi7KBWbzaITg5U2grq+EE3dyQFoDNmdYKzRwTlnHSjd7HtHlpXIuwsmQYgZTEBBpJC4SRw5Yaw8CMpduFWcAjxQLfdEmypxCxMcyoRsdUI8DX7ZG/dBLmIaOjmESnvHItjbnG7iQzBoXtjtwuhKGnmj+ZQZhei/HsMQB16dPbH6Zwxpp7MA9sMhOJf5jN5EuRHoztNH9fHjb3OYw5NtpChsQPI/wBbd6s7qJZfG4LhgC8W4Lx3RZ0gRHm0YXMtIDNw1QYN7qRbohgWBt7mdgiPIO76TfR78fe1LBfNQYWM6dT8QbX5//XZzC8F7A8vfXv5JupJWxvXsGR8QWOx+5BpAONzk9jSCgokQOPHngQjz28g6bHGPDTPyD4s5HTYG1Ckv6BNIyz3vYVGFf8fx3S/HQ04N8vgdcGrG3kqhtpST2JWSR+bTJ5whojhuztmByvtvZptiOwHVfwb6ZMP63UAypsZsWuI3sd5Y9Iltb7gUF/JqXSApSns22vQSIzGy8LDqsermf/2V9dZOndpm3aGhhLMlwBREBCW5NWyYEQdBr+AsWAKiZH9U4jAAAAAElFTkSuQmCC');
+  @media (min-width: 768px) {
+    background-image: none;
+  }
+  @media (min-width: 1920px) {
+    margin-bottom: 100px;
+  }
+}
+
+.job__wraper {
+  @media (min-width: 768px) {
+    @include pseudo-position;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAxCAMAAABEQrEuAAAAIVBMVEX19fX39/f9/f35+fn7+/v////x8fHz8/Pw8PDu7u7r6+v97b0BAAADxklEQVRIx5WV3ZYYNwiDxZ8wvP8DV0x7kYumzW5yzs54MBKfMYsJemVwiq0neFnBqtqmmaiscK+XPRbT+oD2ZQfDDBVh1bSGMdYarzkwm2mEYnKsexDmbQ5lADpjmArFg6X3tF9q7QmLJvQekq2mdDm2QBcTzmzjRGBY7TQWYKWAlwbJVUjYwWi4JEtm+83yM+23DK8TDhrtlOq9yMxnBKds2gDA57yMQgMr6XrS7B4aoudphfvqcoDFLod193pYBnzqgbZuFxFgXykZ+urfi6LjeYYZK4agQ1hDinnoBvO8JVhD5+RumrBgQB/MuL0V8yStrg5socF37ntqgNZzVwN8rC5ZM3LYGBfANgTx7zwK3SeXcd/SdgijbRQAm7Sx9taOuQ8YWMAU69J2u+Ofcq23dAPRxuwXjXuoGWaTpqcs2mMQ8zZb72kODBAZU94EH+0P+hI1NrX2ehCDkb60di2GRCDI6mS4XWYYGj+nWzQFGawDuUEPSva4XsJJDF4wvhaBwxqRE5glkZygxAecZJtxyLcMGlpRMoa2QupFK1IJ632+u18zbmKzMdMZMGAsiQk4QP7sUkGUh0G3nOakgUYz+LOr9LpnhCa72W14SHAHNS4gsO4wJjMvDuXDV7CNruAMtbPn4XcQOQy3fKOArLuXyW5/Ax97+ySauYBkGZgeyTx8nVMWIcF6Bx4E2reOpPfB77EM0kYEpcosDtg+jSlDA4Vfi7KBWbzaITg5U2grq+EE3dyQFoDNmdYKzRwTlnHSjd7HtHlpXIuwsmQYgZTEBBpJC4SRw5Yaw8CMpduFWcAjxQLfdEmypxCxMcyoRsdUI8DX7ZG/dBLmIaOjmESnvHItjbnG7iQzBoXtjtwuhKGnmj+ZQZhei/HsMQB16dPbH6Zwxpp7MA9sMhOJf5jN5EuRHoztNH9fHjb3OYw5NtpChsQPI/wBbd6s7qJZfG4LhgC8W4Lx3RZ0gRHm0YXMtIDNw1QYN7qRbohgWBt7mdgiPIO76TfR78fe1LBfNQYWM6dT8QbX5//XZzC8F7A8vfXv5JupJWxvXsGR8QWOx+5BpAONzk9jSCgokQOPHngQjz28g6bHGPDTPyD4s5HTYG1Ckv6BNIyz3vYVGFf8fx3S/HQ04N8vgdcGrG3kqhtpST2JWSR+bTJ5whojhuztmByvtvZptiOwHVfwb6ZMP63UAypsZsWuI3sd5Y9Iltb7gUF/JqXSApSns22vQSIzGy8LDqsermf/2V9dZOndpm3aGhhLMlwBREBCW5NWyYEQdBr+AsWAKiZH9U4jAAAAAElFTkSuQmCC');
+    width: 100%;
+    height: 1000px;
+  }
+  @media (min-width: 1920px) {
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 848px;
+    height: 1020px;
+    transform: translatex(225px);
+  }
+}
+
+.job__wraper-desktop {
+  display: none;
+  @media (min-width: 1920px) {
+    @include pseudo-position;
+    right: 0;
+    left: 0;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAxCAMAAABEQrEuAAAAIVBMVEX19fX39/f9/f35+fn7+/v////x8fHz8/Pw8PDu7u7r6+v97b0BAAADxklEQVRIx5WV3ZYYNwiDxZ8wvP8DV0x7kYumzW5yzs54MBKfMYsJemVwiq0neFnBqtqmmaiscK+XPRbT+oD2ZQfDDBVh1bSGMdYarzkwm2mEYnKsexDmbQ5lADpjmArFg6X3tF9q7QmLJvQekq2mdDm2QBcTzmzjRGBY7TQWYKWAlwbJVUjYwWi4JEtm+83yM+23DK8TDhrtlOq9yMxnBKds2gDA57yMQgMr6XrS7B4aoudphfvqcoDFLod193pYBnzqgbZuFxFgXykZ+urfi6LjeYYZK4agQ1hDinnoBvO8JVhD5+RumrBgQB/MuL0V8yStrg5socF37ntqgNZzVwN8rC5ZM3LYGBfANgTx7zwK3SeXcd/SdgijbRQAm7Sx9taOuQ8YWMAU69J2u+Ofcq23dAPRxuwXjXuoGWaTpqcs2mMQ8zZb72kODBAZU94EH+0P+hI1NrX2ehCDkb60di2GRCDI6mS4XWYYGj+nWzQFGawDuUEPSva4XsJJDF4wvhaBwxqRE5glkZygxAecZJtxyLcMGlpRMoa2QupFK1IJ632+u18zbmKzMdMZMGAsiQk4QP7sUkGUh0G3nOakgUYz+LOr9LpnhCa72W14SHAHNS4gsO4wJjMvDuXDV7CNruAMtbPn4XcQOQy3fKOArLuXyW5/Ax97+ySauYBkGZgeyTx8nVMWIcF6Bx4E2reOpPfB77EM0kYEpcosDtg+jSlDA4Vfi7KBWbzaITg5U2grq+EE3dyQFoDNmdYKzRwTlnHSjd7HtHlpXIuwsmQYgZTEBBpJC4SRw5Yaw8CMpduFWcAjxQLfdEmypxCxMcyoRsdUI8DX7ZG/dBLmIaOjmESnvHItjbnG7iQzBoXtjtwuhKGnmj+ZQZhei/HsMQB16dPbH6Zwxpp7MA9sMhOJf5jN5EuRHoztNH9fHjb3OYw5NtpChsQPI/wBbd6s7qJZfG4LhgC8W4Lx3RZ0gRHm0YXMtIDNw1QYN7qRbohgWBt7mdgiPIO76TfR78fe1LBfNQYWM6dT8QbX5//XZzC8F7A8vfXv5JupJWxvXsGR8QWOx+5BpAONzk9jSCgokQOPHngQjz28g6bHGPDTPyD4s5HTYG1Ckv6BNIyz3vYVGFf8fx3S/HQ04N8vgdcGrG3kqhtpST2JWSR+bTJ5whojhuztmByvtvZptiOwHVfwb6ZMP63UAypsZsWuI3sd5Y9Iltb7gUF/JqXSApSns22vQSIzGy8LDqsermf/2V9dZOndpm3aGhhLMlwBREBCW5NWyYEQdBr+AsWAKiZH9U4jAAAAAElFTkSuQmCC');
+    width: 1453px;
+    height: 775px;
+    margin: auto;
+    box-shadow: -1px 13px 15px 3px $shadow-box-color;
+    transform: translate(-140px, -30px);
+
+    &::before {
+      @include pseudo-position;
+      background-image: url('../../img/job_bg.png');
+      left: 0;
+      top: 0;
+      width: 1453px;
+      height: 775px;
+    }
+  }
+}
+
+.job__content {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAxCAMAAABEQrEuAAAAIVBMVEX19fX39/f9/f35+fn7+/v////x8fHz8/Pw8PDu7u7r6+v97b0BAAADxklEQVRIx5WV3ZYYNwiDxZ8wvP8DV0x7kYumzW5yzs54MBKfMYsJemVwiq0neFnBqtqmmaiscK+XPRbT+oD2ZQfDDBVh1bSGMdYarzkwm2mEYnKsexDmbQ5lADpjmArFg6X3tF9q7QmLJvQekq2mdDm2QBcTzmzjRGBY7TQWYKWAlwbJVUjYwWi4JEtm+83yM+23DK8TDhrtlOq9yMxnBKds2gDA57yMQgMr6XrS7B4aoudphfvqcoDFLod193pYBnzqgbZuFxFgXykZ+urfi6LjeYYZK4agQ1hDinnoBvO8JVhD5+RumrBgQB/MuL0V8yStrg5socF37ntqgNZzVwN8rC5ZM3LYGBfANgTx7zwK3SeXcd/SdgijbRQAm7Sx9taOuQ8YWMAU69J2u+Ofcq23dAPRxuwXjXuoGWaTpqcs2mMQ8zZb72kODBAZU94EH+0P+hI1NrX2ehCDkb60di2GRCDI6mS4XWYYGj+nWzQFGawDuUEPSva4XsJJDF4wvhaBwxqRE5glkZygxAecZJtxyLcMGlpRMoa2QupFK1IJ632+u18zbmKzMdMZMGAsiQk4QP7sUkGUh0G3nOakgUYz+LOr9LpnhCa72W14SHAHNS4gsO4wJjMvDuXDV7CNruAMtbPn4XcQOQy3fKOArLuXyW5/Ax97+ySauYBkGZgeyTx8nVMWIcF6Bx4E2reOpPfB77EM0kYEpcosDtg+jSlDA4Vfi7KBWbzaITg5U2grq+EE3dyQFoDNmdYKzRwTlnHSjd7HtHlpXIuwsmQYgZTEBBpJC4SRw5Yaw8CMpduFWcAjxQLfdEmypxCxMcyoRsdUI8DX7ZG/dBLmIaOjmESnvHItjbnG7iQzBoXtjtwuhKGnmj+ZQZhei/HsMQB16dPbH6Zwxpp7MA9sMhOJf5jN5EuRHoztNH9fHjb3OYw5NtpChsQPI/wBbd6s7qJZfG4LhgC8W4Lx3RZ0gRHm0YXMtIDNw1QYN7qRbohgWBt7mdgiPIO76TfR78fe1LBfNQYWM6dT8QbX5//XZzC8F7A8vfXv5JupJWxvXsGR8QWOx+5BpAONzk9jSCgokQOPHngQjz28g6bHGPDTPyD4s5HTYG1Ckv6BNIyz3vYVGFf8fx3S/HQ04N8vgdcGrG3kqhtpST2JWSR+bTJ5whojhuztmByvtvZptiOwHVfwb6ZMP63UAypsZsWuI3sd5Y9Iltb7gUF/JqXSApSns22vQSIzGy8LDqsermf/2V9dZOndpm3aGhhLMlwBREBCW5NWyYEQdBr+AsWAKiZH9U4jAAAAAElFTkSuQmCC');
+  @media (min-width: 768px) {
+    transform: translateY(-30px);
+    position: relative;
+    z-index: 1;
+    box-shadow: -1px 13px 15px 3px $shadow-box-color;
+  }
+  @media (min-width: 1920px) {
+    background-image: none;
+    box-shadow: none;
+  }
+}
+
+.job__content::after {
+  @media (min-width: 768px) {
+    @include pseudo-position;
+    bottom: -15px;
+    right: -15px;
+    width: 630px;
+    height: 435px;
+    border-bottom: 15px solid $accent-color;
+    border-right: 15px solid $accent-color;
+  }
+  @media (min-width: 1920px) {
+    top: -55px;
+    right: -42px;
+    width: 439px;
+    height: 511px;
+    border-bottom: none;
+    border-right: 30px solid $accent-color;
+    border-top: 55px solid $accent-color;
+  }
+}
+
+.job__header {
+  @media (min-width: 1920px) {
+    position: absolute;
+    width: 566px;
+    left: 165px;
+    top: 83px;
+  }
+}
+
+.job__title {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 56px;
+  letter-spacing: 0.022em;
+  @extend%section__title;
+  color: $main-dark-color;
+  @media (min-width: 768px) {
+    padding-top: 65px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 30px;
+    letter-spacing: 0.06em;
+  }
+
+  @media (min-width: 1920px) {
+    padding: 0;
+    padding-top: 3px;
+    text-align: left;
+    letter-spacing: 2.5px;
+  }
+}
+
+.job__title::after {
+  @include pseudo;
+  width: 150px;
+  height: 1px;
+  margin: 8px auto 18px;
+  background-color: $main-dark-color;
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.job__average {
+  margin: 0 auto;
+  @include text;
+  font-family: $main-title-font;
+  font-size: 14px;
+  font-weight: 900;
+  text-indent: 26px;
+  line-height: 1.4;
+  letter-spacing: 0.12em;
+  @media (min-width: 768px) {
+    border-bottom: 1px solid $dark-text-color;
+    width: 320px;
+    text-align: right;
+  }
+  @media (min-width: 1920px) {
+    font-size: 18px;
+    border-bottom: 3px solid $dark-text-color;
+    width: 431px;
+    letter-spacing: 2px;
+  }
+}
+
+.job__objective {
+  margin: 0 auto 30px;
+  @include text;
+  font-family: $main-title-font;
+  font-size: 14px;
+  font-weight: 900;
+  text-indent: 26px;
+  line-height: 1.4;
+  letter-spacing: 0.19em;
+  @media (min-width: 768px) {
+    margin-bottom: 35px;
+    width: 320px;
+    text-align: right;
+  }
+  @media (min-width: 1920px) {
+    width: 430px;
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+}
+
+.job__objective span {
+  color: $accent-color;
+  @media (min-width: 1920px) {
+    background-color: $main-dark-color;
+    padding: 2px;
+  }
+}
+
+.job__list {
+  padding-left: 11px;
+  padding-right: 11px;
+  padding-bottom: 47px;
+  @extend %list;
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 61px;
+    padding-right: 60px;
+    padding-bottom: 15px;
+  }
+  @media (min-width: 1920px) {
+    width: 880px;
+    padding-top: 91px;
+    padding-left: 25px;
+    padding-right: 0;
+    margin: 0 auto;
+  }
+}
+
+.job__sub {
+  margin: 0;
+  margin-bottom: 35px;
+  padding-left: 98px;
+  padding-top: 20px;
+  letter-spacing: 0.022em;
+  @include font-mix($main-title-font, 16px, 900);
+  text-transform: uppercase;
+  line-height: 1.4;
+  @media (min-width: 768px) {
+    padding-top: 17px;
+    letter-spacing: 0.04em;
+  }
+}
+
+.job__item:first-child .job__sub {
+  @media (min-width: 1920px) {
+    padding-top: 22px;
+  }
+}
+
+.job__item:nth-child(5) .job__sub {
+  @media (min-width: 768px) {
+    padding-right: 90px;
+  }
+  @media (min-width: 1920px) {
+    padding-top: 10px;
+  }
+}
+
+.job__item:not(:last-child) .job__sub::after {
+  @include pseudo;
+  width: 58px;
+  height: 3px;
+  background-color: $accent-color;
+}
+
+.job__sub--last {
+  padding-left: 0;
+  padding-top: 4px;
+  line-height: 1.45;
+  @media (min-width: 768px) {
+    padding-left: 3px;
+    padding-top: 1px;
+    letter-spacing: 0.02em;
+  }
+  @media (min-width: 1920px) {
+    font-size: 20px;
+    padding-right: 0;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    margin-bottom: 75px;
+  }
+}
+
+.job__item {
+  position: relative;
+  margin-bottom: 18px;
+  background-color: $main-light-color;
+  @media (min-width: 768px) {
+    width: 270px;
+    margin-bottom: 33px;
+    box-shadow: -1px 13px 15px 3px $shadow-box-color;
+  }
+  @media (min-width: 1920px) {
+    margin-bottom: 29px;
+  }
+}
+
+.job__item:first-child {
+  @media (min-width: 1920px) {
+    margin-left: 585px;
+  }
+}
+
+.job__item:nth-child(2) {
+  margin-bottom: 17px;
+  @media (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+}
+
+.job__item:nth-child(3) {
+  margin-bottom: 20px;
+  @media (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+}
+
+.job__item:nth-child(4) {
+  margin-bottom: 20px;
+  @media (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+}
+
+.job__item:nth-child(5) {
+  @media (min-width: 768px) {
+    order: 2;
+  }
+}
+
+.job__item--last {
+  padding: 15px;
+  @media (min-width: 768px) {
+    order: 1;
+  }
+  @media (min-width: 1920px) {
+    width: 562px;
+    position: relative;
+    padding-left: 50px;
+    padding-top: 28px;
+
+    &::before {
+      @include pseudo-position;
+      left: -104px;
+      bottom: -62px;
+      width: 320px;
+      height: 230px;
+      border-left: 104px solid $accent-color;
+      border-bottom: 63px solid $accent-color;
+    }
+  }
+}
+
+.job__item:not(:last-child)::before {
+  @include pseudo-position;
+  left: 17px;
+  top: 14px;
+  width: 57px;
+  height: 57px;
+  background-color: $main-dark-color;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  @media (min-width: 1920px) {
+    top: 10px;
+  }
+}
+
+.job__item:nth-child(1)::before {
+  background-image: url('../../img/coding.png');
+}
+
+.job__item:nth-child(2)::before {
+  background-image: url('../../img/code.png');
+}
+
+.job__item:nth-child(3)::before {
+  background-image: url('../../img/pc.png');
+}
+
+.job__item:nth-child(4)::before {
+  background-image: url('../../img/wordpress.png');
+}
+
+.job__item:nth-child(5)::before {
+  background-image: url('../../img/website.png');
+}
+
+.job__descr {
+  margin: 0;
+  margin-bottom: 9px;
+  padding-left: 19px;
+  @include font-mix($main-font, 16px, 600);
+  line-height: 1.25;
+}
+
+.job__item:nth-child(5) .job__descr {
+  @media (min-width: 768px) {
+    padding-right: 70px;
+  }
+}
+
+.job__salary {
+  margin: 0;
+  padding-left: 17px;
+  @include font-mix($secondary-font, 16px, 700);
+}
+
+.job__salary span {
+  position: relative;
+  color: $accent-color;
+  font-size: 22px;
+}
+
+.job__salary span::after {
+  @include pseudo-position;
+  left: 0;
+  width: 77px;
+  height: 2px;
+  background-color: $main-dark-color;
+}
+
+.job__vacancies {
+  margin: 0;
+  padding-left: 19px;
+  padding-bottom: 19px;
+  font-family: $secondary-font, monospace;
+  font-size: 18px;
+  color: $main-dark-color;
+}
+
+.job__vacancies span {
+  font-size: 30px;
+  font-weight: 700;
+  @media (min-width: 768px) {
+    padding-left: 9px;
+  }
+}
+
+.job__button {
+  margin: 0 auto 61px;
+  padding: 14px 5px;
+  @include font-mix($main-title-font, 14px, 900);
+  letter-spacing: 0.8px;
+  color: $main-light-color;
+  text-shadow: $button-text-shadow;
+  text-transform: uppercase;
+  line-height: 1.857;
+  @extend%button-gradient;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  @media (min-width: 1920px) {
+    padding: 20px 35px;
+    margin-bottom: 6px;
+    margin-left: 70px;
+    font-size: 16px;
+  }
+}
+
+.job__ref {
+  margin: 0;
+  font-family: $secondary-font, monospace;
+  font-size: 12px;
+  color: $main-dark-color;
+  @media (min-width: 1920px) {
+    writing-mode: tb-rl;
+    position: absolute;
+    right: 18px;
+    top: 20px;
+  }
+}
+
+.job__ref span {
+  color: $add-accent-color;
+}

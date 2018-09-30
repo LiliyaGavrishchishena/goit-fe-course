@@ -1,0 +1,152 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/OpenSans/open-sans-v15-cyrillic_latin-regular.eot');
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+    url('../fonts/OpenSans/open-sans-v15-cyrillic_latin-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans/open-sans-v15-cyrillic_latin-regular.woff2') format('woff2'),
+    url('../fonts/OpenSans/open-sans-v15-cyrillic_latin-regular.woff') format('woff'),
+    url('../fonts/OpenSans/open-sans-v15-cyrillic_latin-regular.ttf') format('truetype'),
+    url('../fonts/OpenSans/open-sans-v15-cyrillic_latin-regular.svg#OpenSans') format('svg');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/OpenSans/open-sans-v15-cyrillic_latin-600.eot');
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'),
+    url('../fonts/OpenSans/open-sans-v15-cyrillic_latin-600.eot?#iefix')
+    url('../fonts/OpenSans/open-sans-v15-cyrillic_latin-600.woff2') format('woff2'),
+    url('../fonts/OpenSans/open-sans-v15-cyrillic_latin-600.woff') format('woff'),
+    url('../fonts/OpenSans/open-sans-v15-cyrillic_latin-600.ttf') format('truetype'),
+    url('../fonts/OpenSans/open-sans-v15-cyrillic_latin-600.svg#OpenSans') format('svg');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/OpenSans/open-sans-v15-cyrillic_latin-700.eot');
+  src: local('Open Sans Bold'), local('OpenSans-Bold'),
+    url('../fonts/OpenSans/open-sans-v15-cyrillic_latin-700.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans/open-sans-v15-cyrillic_latin-700.woff2') format('woff2'),
+    url('../fonts/OpenSans/open-sans-v15-cyrillic_latin-700.woff') format('woff'),
+    url('../fonts/OpenSans/open-sans-v15-cyrillic_latin-700.ttf') format('truetype'),
+    url('../fonts/OpenSans/open-sans-v15-cyrillic_latin-700.svg#OpenSans') format('svg');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/OpenSans/open-sans-v15-cyrillic_latin-800.eot');
+  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'),
+    url('../fonts/OpenSans/open-sans-v15-cyrillic_latin-800.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans/open-sans-v15-cyrillic_latin-800.woff2') format('woff2'),
+    url('../fonts/OpenSans/open-sans-v15-cyrillic_latin-800.woff') format('woff'),
+    url('../fonts/OpenSans/open-sans-v15-cyrillic_latin-800.ttf') format('truetype'),
+    url('../fonts/OpenSans/open-sans-v15-cyrillic_latin-800.svg#OpenSans') format('svg');
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot');
+  src: local('Museo Sans Cyrl 300'), local('MuseoSansCyrl-300'),
+    url('../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff') format('woff'),
+    url('../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf') format('truetype'),
+    url('../fonts/MuseoSansCyrl/MuseoSansCyrl-300.svg#MuseoSansCyrl-300') format('svg');
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/MuseoSansCyrl/MuseoSansCyrl-500.eot');
+  src: local('Museo Sans Cyrl 500'), local('MuseoSansCyrl-500'),
+    url('../fonts/MuseoSansCyrl/MuseoSansCyrl-500.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MuseoSansCyrl/MuseoSansCyrl-500.woff') format('woff'),
+    url('../fonts/MuseoSansCyrl/MuseoSansCyrl-500.ttf') format('truetype'),
+    url('../fonts/MuseoSansCyrl/MuseoSansCyrl-500.svg#MuseoSansCyrl-500') format('svg');
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/MuseoSansCyrl/MuseoSansCyrl-900.eot');
+  src: local('Museo Sans Cyrl 900'), local('MuseoSansCyrl-900'),
+    url('../fonts/MuseoSansCyrl/MuseoSansCyrl-900.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MuseoSansCyrl/MuseoSansCyrl-900.woff') format('woff'),
+    url('../fonts/MuseoSansCyrl/MuseoSansCyrl-900.ttf') format('truetype'),
+    url('../fonts/MuseoSansCyrl/MuseoSansCyrl-900.svg#MuseoSansCyrl-900') format('svg');
+}
+
+
+@font-face {
+  font-family: 'Ubuntu Mono';
+  font-style: normal;
+  font-weight: 400; 
+  src: local('Ubuntu Mono'), local('UbuntuMono-Regular'),
+    url('../fonts/UbuntuMono/ubuntu-mono-v7-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/UbuntuMono/ubuntu-mono-v7-latin_cyrillic-regular.woff2') format('woff2'),
+    url('../fonts/UbuntuMono/ubuntu-mono-v7-latin_cyrillic-regular.woff') format('woff'),
+    url('../fonts/UbuntuMono/ubuntu-mono-v7-latin_cyrillic-regular.ttf') format('truetype'),
+    url('../fonts/UbuntuMono/ubuntu-mono-v7-latin_cyrillic-regular.svg#UbuntuMono') format('svg');
+}
+
+@font-face {
+  font-family: 'Ubuntu Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/ubuntu-mono-v7-latin_cyrillic-700.eot');
+  src: local('Ubuntu Mono Bold'), local('UbuntuMono-Bold'),
+    url('../fonts/UbuntuMono/ubuntu-mono-v7-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/UbuntuMono/ubuntu-mono-v7-latin_cyrillic-700.woff2') format('woff2'),
+    url('../fonts/UbuntuMono/ubuntu-mono-v7-latin_cyrillic-700.woff') format('woff'),
+    url('../fonts/UbuntuMono/ubuntu-mono-v7-latin_cyrillic-700.ttf') format('truetype'),
+    url('../fonts/UbuntuMono/ubuntu-mono-v7-latin_cyrillic-700.svg#UbuntuMono') format('svg');
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/ProximaNova-Regular/ProximaNova-Regular.eot');
+  src: local('Proxima Nova Regular'), local('ProximaNova-Regular'),
+    url('../fonts/ProximaNova-Regular/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ProximaNova-Regular/ProximaNova-Regular.woff2') format('woff2'),
+    url('../fonts/ProximaNova-Regular/ProximaNova-Regular.woff') format('woff'),
+    url('../fonts/ProximaNova-Regular/ProximaNova-Regular.ttf') format('truetype'),
+    url('../fonts/ProximaNova-Regular/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/ProximaNova-Bold/ProximaNova-Bold.eot');
+  src: local('Proxima Nova Bold'), local('ProximaNova-Bold'),
+    url('../fonts/ProximaNova-Bold/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ProximaNova-Bold/ProximaNova-Bold.woff2') format('woff2'),
+    url('../fonts/ProximaNova-Bold/ProximaNova-Bold.woff') format('woff'),
+    url('../fonts/ProximaNova-Bold/ProximaNova-Bold.ttf') format('truetype'),
+    url('../fonts/ProximaNova-Bold/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/ProximaNova-Extra/ProximaNova-Extrabld.eot');
+  src: local('Proxima Nova Extra'), local('ProximaNova-Extrabld'),
+    url('../fonts/ProximaNova-Extra/ProximaNova-Extrabld.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ProximaNova-Extra/ProximaNova-Extrabld.woff2') format('woff2'),
+    url('../fonts/ProximaNova-Bold/ProximaNova-Extrabld.woff') format('woff'),
+    url('../fonts/ProximaNova-Extra/ProximaNova-Extrabld.ttf') format('truetype'),
+    url('../fonts/ProximaNova-Extra/ProximaNova-Extrabld.svg#ProximaNova-Extrabld') format('svg');
+}
