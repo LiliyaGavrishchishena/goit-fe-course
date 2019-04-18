@@ -65,7 +65,7 @@ input[type='radio'].visually-hidden {
   text-transform: uppercase;
 }
 
-.form-list {
+#form-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -126,6 +126,11 @@ input[type='radio'].visually-hidden {
   border-radius: 20px;
   padding: 12px 45px;
   cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.banner-button:hover {
+  background-color: #ffa507;
 }
 
 /* MAIN */
@@ -226,6 +231,12 @@ input[type='radio'].visually-hidden {
   border-radius: 20px;
   padding: 10px 69px;
   cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.cards-button:hover {
+  border: 2px solid #ffa507;
+  color: #ffa507;
 }
 
 @media (min-width: 768px) {
@@ -362,4 +373,3 @@ input[type='radio'].visually-hidden {
     right: 50px;
   }
 }
-

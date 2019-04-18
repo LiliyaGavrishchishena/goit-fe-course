@@ -1,84 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Модуль 8</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
-  <link rel="stylesheet" href="./css/styles.css">
-  <title>Модуль 8</title>
-</head>
+  <body>
+    <!-- BANNER-HEADER -->
+    <header class="banner">
+      <div class="container">
+        <nav class="form">
+          <ul id="form-list">
+            <li class="form-item">
+              <a href="#">Log In</a>
+            </li>
+            <li class="form-item form-item-active">
+              <a href="#">Sign Up</a>
+            </li>
+          </ul>
+          <a href="#" class="logo">URLAUBSGLÜCK</a>
+        </nav>
+        <section class="header-section">
+          <h2 class="header-slogan">Share your holiday dreams</h2>
+          <p class="slogan">And find the perfect partner to fullfill it</p>
+          <button class="banner-button">Find your holiday partner</button>
+        </section>
+      </div>
+    </header>
 
-<body>
-  <!-- BANNER-HEADER -->
-  <header class="banner">
-    <div class="container">
-      <nav class="form">
-        <ul class="form-list">
-          <li class="form-item">
-            <a href="#">Log In</a>
+    <!-- MAIN -->
+    <main>
+      <h1 class="visually-hidden">
+        Share your holiday dreams with URLAUBSGLÜCK
+      </h1>
+      <section class="cards container">
+        <h2 class="cards-header">Meet a partner for your best holiday</h2>
+        <ul class="cards-list">
+          <li class="cards-item">
+            <div class="cards-item-hunter">
+              <img src="./img/foto1.png" alt="Bradley Hunter's foto" />
+            </div>
+            <h3 class="card-name">Bradley Hunter</h3>
+            <p class="card-description">
+              Based in Chicago. I love playing tennis and loud music.
+            </p>
           </li>
-          <li class="form-item form-item-active">
-            <a href="#">Sign Up</a>
+          <li class="cards-item">
+            <div class="cards-item-walker">
+              <img src="./img/foto2.png" alt="Heather Walker's foto" />
+            </div>
+            <h3 class="card-name">Heather Walker</h3>
+            <p class="card-description">
+              I get my inspiration from nature and objects around me. I have a
+              passion to colours, typography and skateboards.
+            </p>
+          </li>
+          <li class="cards-item">
+            <div class="cards-item-lucas">
+              <img src="./img/foto3.png" alt="Lucas Marsha's foto" />
+            </div>
+            <h3 class="card-name">Lucas Marsha</h3>
+            <p class="card-description">
+              I'm a happy person that loves cats and climbing on mountains.
+            </p>
+          </li>
+          <li class="cards-item">
+            <div class="cards-item-bradly">
+              <img src="./img/foto4.png" alt="Bradley Hunter's foto" />
+            </div>
+            <h3 class="card-name">Bradley Hunter</h3>
+            <p class="card-description">
+              Based in Chicago. I love playing tennis and loud music.
+            </p>
           </li>
         </ul>
-        <a href="#" class="logo">URLAUBSGLÜCK</a>
-      </nav>
-      <section class="header-section">
-        <h2 class="header-slogan">Share your holiday dreams</h2>
-        <p class="slogan">And find the perfect partner to fullfill it</p>
-        <button class="banner-button">Find your holiday partner</button>
+        <button class="cards-button">See other partners</button>
       </section>
-    </div>
-  </header>
+    </main>
 
-  <!-- MAIN -->
-  <main>
-    <h1 class="visually-hidden">Share your holiday dreams with URLAUBSGLÜCK</h1>
-    <section class="cards container">
-      <h2 class="cards-header">Meet a partner for your best holiday</h2>
-      <ul class="cards-list">
-        <li class="cards-item">
-          <div class="cards-item-hunter">
-            <img src="./img/foto1.png" alt="Bradley Hunter's foto">
-          </div>
-          <h3 class="card-name">Bradley Hunter</h3>
-          <p class="card-description">Based in Chicago. I love playing tennis and loud music.</p>
-
-        </li>
-        <li class="cards-item">
-          <div class="cards-item-walker">
-            <img src="./img/foto2.png" alt="Heather Walker's foto">
-          </div>
-          <h3 class="card-name">Heather Walker</h3>
-          <p class="card-description">I get my inspiration from nature and objects around me. I have a passion
-            to colours, typography and skateboards.</p>
-
-        </li>
-        <li class="cards-item">
-          <div class="cards-item-lucas">
-            <img src="./img/foto3.png" alt="Lucas Marsha's foto">
-          </div>
-          <h3 class="card-name">Lucas Marsha</h3>
-          <p class="card-description">I'm a happy person that loves cats and climbing on mountains.</p>
-
-        </li>
-        <li class="cards-item">
-          <div class="cards-item-bradly">
-            <img src="./img/foto4.png" alt="Bradley Hunter's foto">
-          </div>
-          <h3 class="card-name">Bradley Hunter</h3>
-          <p class="card-description">Based in Chicago. I love playing tennis and loud music.</p>
-
-        </li>
-      </ul>
-      <button class="cards-button">See other partners</button>
-    </section>
-  </main>
-
-</body>
-
+    <script type="text/javascript">
+      const form = document.getElementById('form-list');
+      let btns = form.getElementsByClassName('form-item');
+      for (let i = 0; i < btns.length; i++) {
+        btns[i].addEventListener('click', function() {
+          let current = document.getElementsByClassName(' form-item-active');
+          current[0].className = current[0].className.replace(
+            'form-item-active',
+            'form-item'
+          );
+          this.className += ' form-item-active';
+        });
+      }
+    </script>
+  </body>
 </html>
